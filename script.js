@@ -1,15 +1,26 @@
-const button = document.querySelector('.menu-button');
+const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('nav');
+const navLinks = [...nav.querySelectorAll('a')];
 
-button.addEventListener('click', () => {
-  const isOpen = button.getAttribute('aria-expanded') === 'true';
-  button.setAttribute('aria-expanded', String(!isOpen));
+menuButton.addEventListener('click', () => {
+  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+  menuButton.setAttribute('aria-expanded', String(!isOpen));
   nav.classList.toggle('open', !isOpen);
 });
 
-nav.querySelectorAll('a').forEach((link) => {
+navLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    button.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-expanded', 'false');
     nav.classList.remove('open');
   });
 });
+
+const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((link) => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+  });
+}, { rootMargin: '-35% 0px -55% 0px' });
+
+sections.forEach((section) => observer.observe(section));
