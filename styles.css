@@ -36,6 +36,8 @@ h1, h2, h3, p { overflow-wrap: break-word; }
 h1 { max-width: 850px; margin: 0; font-family: var(--serif); font-size: clamp(3.8rem, 8vw, 7rem); font-weight: 400; line-height: .98; letter-spacing: -.045em; }
 .lead { max-width: 760px; margin: 1.6rem 0 0; color: var(--text); font-size: clamp(1.25rem, 2.4vw, 1.75rem); line-height: 1.38; letter-spacing: -.015em; }
 .intro-text { max-width: 700px; margin: 1.4rem 0 0; color: var(--muted); font-size: 1.02rem; }
+.company-link { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+.company-link:hover { color: var(--accent); }
 .inline-links { display: flex; flex-wrap: wrap; gap: .75rem 1.7rem; margin-top: 2rem; }
 .inline-links a { color: var(--text); text-underline-offset: 5px; text-decoration-color: var(--accent); }
 .inline-links a:hover { color: var(--accent); }
