@@ -1,6 +1,6 @@
 # Yuntao Xue — Academic Homepage
 
-A lightweight, responsive academic overview for GitHub Pages. Three interactive topic panels present education, research experience, and research interests without leaving the page. The site uses plain HTML, CSS, inline SVG illustrations, and JavaScript with no build step or external dependencies.
+A lightweight, responsive one-page academic website for GitHub Pages. The site uses plain HTML, CSS, inline SVG illustrations, and JavaScript with no build step or external dependencies.
 
 ## Publish on GitHub Pages
 
@@ -22,11 +22,10 @@ Then visit <http://127.0.0.1:8010>.
 
 ## Update content
 
-- Overview and expandable topic panels: `index.html`
+- All public content: `index.html`
 - Visual design and responsive layouts: `styles.css`
-- Dialog and accordion interactions: `script.js`
+- Mobile navigation and active-section state: `script.js`
 - Profile photo: `assets/yuntao-xue.png`
-- Official institutional marks: `assets/cuhk-logo.png` and `assets/e3a-healthcare-logo.png`
 - Browser icon: `assets/favicon.svg`
 
 Before publishing new claims or metrics, verify them against the corresponding report, dataset definition, and model version.

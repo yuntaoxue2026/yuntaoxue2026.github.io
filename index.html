@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Yuntao Xue — education, health AI research experience, and interests in statistical machine learning." />
-    <meta name="theme-color" content="#0a0f16" />
+    <meta name="description" content="Yuntao Xue — statistical machine learning, AI, and real-world health data research." />
+    <meta name="theme-color" content="#0b0f14" />
     <meta property="og:title" content="Yuntao Xue | Statistics, AI & Health" />
     <meta property="og:description" content="Statistical machine learning for longitudinal, wearable, and multimodal health data." />
     <title>Yuntao Xue | Statistics, AI & Health</title>
@@ -12,231 +12,296 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to overview</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="#main">Yuntao Xue</a>
-      <div class="header-links">
-        <a href="mailto:1155278036@link.cuhk.edu.hk">Email</a>
-        <a href="https://github.com/yuntaoxue2026" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <div class="shell nav-wrap">
+        <a class="brand" href="#top">Yuntao Xue</a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <nav id="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#research">Interests</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
     </header>
 
-    <main class="overview" id="main">
-      <section class="profile" aria-labelledby="profile-title">
+    <main id="main">
+      <section class="shell hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Statistics · Machine Learning · Health</p>
+          <h1>Yuntao Xue</h1>
+          <p class="lead">I use statistical thinking and AI to study complex, real-world healthcare and public health problems.</p>
+          <p class="muted">
+            MSc student in Artificial Intelligence for Science at The Chinese University of Hong Kong and AI Engineer at
+            <a class="text-link" href="https://e3ahealth.com/" target="_blank" rel="noreferrer">E3A Healthcare ↗</a>.
+          </p>
+          <div class="hero-links">
+            <a href="mailto:1155278036@link.cuhk.edu.hk">Email</a>
+            <a href="https://github.com/yuntaoxue2026" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
         <figure class="portrait">
           <img src="assets/yuntao-xue.png" alt="Portrait of Yuntao Xue" />
         </figure>
-        <div>
-          <p class="eyebrow">Statistics · AI · Health</p>
-          <h1 id="profile-title">Yuntao<br />Xue</h1>
-          <p class="profile-lead">I use statistical thinking and AI to study complex, real-world healthcare and public health problems.</p>
-          <p class="profile-meta">MSc student at CUHK · AI Engineer at E3A Healthcare</p>
+      </section>
+
+      <section class="shell section about" id="about">
+        <p class="section-label">About</p>
+        <div class="wide-copy">
+          <h2>Reliable models begin with careful questions.</h2>
+          <p>
+            My background in statistics shapes how I approach AI: I care about assumptions, measurement quality, uncertainty, and whether an evaluation reflects the way a model would actually be used. Working with maternal, fetal, and neonatal data has shown me that missing signals, irregular visits, rare outcomes, and device differences are not side issues—they are part of the scientific problem.
+          </p>
         </div>
       </section>
 
-      <section class="topics" aria-label="Explore my background">
-        <p class="topics-label">Select a topic to explore</p>
+      <section class="shell section" id="education">
+        <div class="section-head">
+          <p class="section-label">Education & skills</p>
+          <h2>Statistics as a foundation. AI as a research tool.</h2>
+        </div>
 
-        <button class="topic-card" type="button" data-dialog="education-dialog" aria-haspopup="dialog">
-          <span class="topic-number">01</span>
-          <span class="topic-copy"><strong>Education</strong><small>Statistics foundation and AI for Science training</small></span>
-          <span class="topic-arrow" aria-hidden="true">↗</span>
-        </button>
+        <div class="education-list">
+          <article>
+            <p class="meta">2026—present · Hong Kong</p>
+            <h3>MSc in Artificial Intelligence for Science</h3>
+            <p>The Chinese University of Hong Kong</p>
+            <small>Expected completion: early 2028</small>
+          </article>
+          <article>
+            <p class="meta">Completed 2026 · Shenzhen</p>
+            <h3>BSc in Statistics</h3>
+            <p>The Chinese University of Hong Kong</p>
+            <small>Studies completed at CUHK-Shenzhen</small>
+          </article>
+        </div>
 
-        <button class="topic-card" type="button" data-dialog="experience-dialog" aria-haspopup="dialog">
-          <span class="topic-number">02</span>
-          <span class="topic-copy"><strong>Research Experience</strong><small>Healthcare AI from data audit to rigorous evaluation</small></span>
-          <span class="topic-arrow" aria-hidden="true">↗</span>
-        </button>
+        <div class="knowledge-grid">
+          <article>
+            <h3>Selected coursework</h3>
+            <p>Machine Learning · Statistical Machine Learning · Generalized Linear Models · Bayesian Statistics · Multivariate Statistical Analysis · Statistical Genomics · AI Practicum</p>
+          </article>
+          <article>
+            <h3>Statistics</h3>
+            <p>Regression and GLMs · Bayesian and empirical-Bayes reasoning · bootstrap methods · measurement agreement · calibration · uncertainty assessment</p>
+          </article>
+          <article>
+            <h3>ML & deep learning</h3>
+            <p>PyTorch · CNNs · Transformers · LSTMs · LightGBM · representation learning · multimodal fusion · multi-GPU training</p>
+          </article>
+          <article>
+            <h3>Research practice</h3>
+            <p>Longitudinal modeling · physiological time series · patient-level validation · subgroup analysis · SQL · auditable data pipelines</p>
+          </article>
+        </div>
+      </section>
 
-        <button class="topic-card" type="button" data-dialog="interests-dialog" aria-haspopup="dialog">
-          <span class="topic-number">03</span>
-          <span class="topic-copy"><strong>Research Interests</strong><small>Reliable statistical learning for real health challenges</small></span>
-          <span class="topic-arrow" aria-hidden="true">↗</span>
-        </button>
+      <section class="experience-band" id="experience">
+        <div class="shell section">
+          <div class="experience-heading">
+            <div>
+              <p class="section-label">Experience · July 2025—present</p>
+              <h2>AI Engineer at <a class="text-link" href="https://e3ahealth.com/" target="_blank" rel="noreferrer">E3A Healthcare ↗</a></h2>
+            </div>
+            <p>
+              I contribute across data auditing, signal processing, model development, evaluation, and technical communication. Each project below shows a different part of that research workflow.
+            </p>
+          </div>
+
+          <div class="privacy-note">
+            <span aria-hidden="true">○</span>
+            <p>All project graphics are conceptual illustrations created for this portfolio. They contain no patient data, internal results, product interfaces, or proprietary model details.</p>
+          </div>
+
+          <div class="project-list">
+            <article class="project">
+              <div class="project-copy">
+                <p class="project-number">01 · Longitudinal prediction</p>
+                <h3>Delivery-Time Forecasting from Maternal and Fetal Monitoring Data</h3>
+                <p>Modeling repeated, irregular measurements while respecting what was known at each prediction time.</p>
+                <p class="contribution-label">My contribution</p>
+                <ul>
+                  <li>Developed temporal models combining physiological signals, gestational age, clinical variables, and patient history.</li>
+                  <li>Implemented CNN–Transformer representations and patient-level LSTM components.</li>
+                  <li>Designed patient-level evaluation, probabilistic outputs, interval analysis, and subgroup checks.</li>
+                  <li>Maintained training and inference code, including four-GPU distributed training workflows.</li>
+                </ul>
+                <div class="method-tags"><span>Longitudinal data</span><span>PyTorch</span><span>Calibration</span><span>Patient-level validation</span></div>
+              </div>
+              <figure class="visual-card">
+                <svg viewBox="0 0 520 280" role="img" aria-labelledby="v1-title v1-desc">
+                  <title id="v1-title">Conceptual longitudinal prediction</title>
+                  <desc id="v1-desc">Irregular observations, a fitted trajectory, and a widening uncertainty band.</desc>
+                  <g class="grid"><path d="M55 55H480M55 110H480M55 165H480M55 220H480"/><path d="M110 35V240M200 35V240M290 35V240M380 35V240M470 35V240"/></g>
+                  <path class="area" d="M55 184C110 130 145 174 191 125S280 73 320 113 378 190 421 126 458 88 480 98V153C452 137 439 167 408 181S353 159 316 153 250 177 205 171 135 200 55 214Z"/>
+                  <path class="line" d="M55 198C110 146 145 187 191 142S280 90 320 132 378 207 421 145 458 107 480 117"/>
+                  <g class="dots"><circle cx="55" cy="198" r="5"/><circle cx="127" cy="167" r="5"/><circle cx="191" cy="142" r="5"/><circle cx="301" cy="116" r="5"/><circle cx="421" cy="145" r="5"/><circle cx="480" cy="117" r="5"/></g>
+                  <text x="55" y="260">irregular patient history</text><text x="370" y="260">prediction →</text>
+                </svg>
+                <figcaption>Conceptual visualization · synthetic data</figcaption>
+              </figure>
+            </article>
+
+            <article class="project">
+              <div class="project-copy">
+                <p class="project-number">02 · Heterogeneity & rare outcomes</p>
+                <h3>Preterm Risk and Population-Aware Model Iteration</h3>
+                <p>Testing how different modeling strategies behave across heterogeneous and imbalanced populations.</p>
+                <p class="contribution-label">My contribution</p>
+                <ul>
+                  <li>Compared specialist models, soft mixture-of-experts designs, and a unified full-data model.</li>
+                  <li>Investigated clinical and learned features for routing and expert-training strategies.</li>
+                  <li>Separated patient-level from measurement-level conclusions and documented small-sample limits.</li>
+                  <li>Evaluated preterm probability and seven-day delivery risk without conflating the two outcomes.</li>
+                </ul>
+                <div class="method-tags"><span>Mixture of experts</span><span>Rare outcomes</span><span>Subgroup analysis</span><span>Risk thresholds</span></div>
+              </div>
+              <figure class="visual-card">
+                <svg viewBox="0 0 520 280" role="img" aria-labelledby="v2-title v2-desc">
+                  <title id="v2-title">Conceptual population-aware model</title>
+                  <desc id="v2-desc">A shared representation routes information to two specialist pathways before producing a calibrated risk.</desc>
+                  <g class="node-lines"><path d="M132 140H205M265 140C305 140 305 82 345 82M265 140C305 140 305 198 345 198M405 82C445 82 445 140 468 140M405 198C445 198 445 140 468 140"/></g>
+                  <rect class="node" x="48" y="108" width="84" height="64" rx="5"/><text x="90" y="136" text-anchor="middle">shared</text><text x="90" y="154" text-anchor="middle">history</text>
+                  <rect class="node accent-node" x="205" y="108" width="60" height="64" rx="5"/><text x="235" y="145" text-anchor="middle">gate</text>
+                  <rect class="node" x="345" y="53" width="60" height="58" rx="29"/><text x="375" y="87" text-anchor="middle">A</text>
+                  <rect class="node" x="345" y="169" width="60" height="58" rx="29"/><text x="375" y="203" text-anchor="middle">B</text>
+                  <circle class="result" cx="474" cy="140" r="25"/><text x="474" y="144" text-anchor="middle">risk</text>
+                  <text x="55" y="252">shared signal</text><text x="343" y="252">specialist paths</text>
+                </svg>
+                <figcaption>Conceptual visualization · no internal architecture</figcaption>
+              </figure>
+            </article>
+
+            <article class="project">
+              <div class="project-copy">
+                <p class="project-number">03 · Physiological signals</p>
+                <h3>Fetal Heart Rate Signal Processing and Algorithm Evaluation</h3>
+                <p>Tracing failures from raw signal assumptions through timing, state, and output behavior.</p>
+                <p class="contribution-label">My contribution</p>
+                <ul>
+                  <li>Reviewed the processing chain from preprocessing and template matching to heart-rate output.</li>
+                  <li>Detected inconsistent sampling assumptions and implemented rate recognition and adaptation.</li>
+                  <li>Improved timestamp alignment, missing-value handling, signal-quality gating, and state control.</li>
+                  <li>Kept accuracy claims tied to the availability of reliable reference signals.</li>
+                </ul>
+                <div class="method-tags"><span>FPCG</span><span>Signal quality</span><span>Time alignment</span><span>Algorithm audit</span></div>
+              </div>
+              <figure class="visual-card">
+                <svg viewBox="0 0 520 280" role="img" aria-labelledby="v3-title v3-desc">
+                  <title id="v3-title">Conceptual physiological signal quality review</title>
+                  <desc id="v3-desc">A continuous physiological waveform includes a low-quality interval and a time-aligned recovery.</desc>
+                  <g class="grid"><path d="M45 65H480M45 120H480M45 175H480M45 230H480"/></g>
+                  <rect class="quality-zone" x="242" y="42" width="82" height="202" rx="4"/>
+                  <path class="signal" d="M45 148l18-2 9-48 12 99 13-53 18 4 23-2 8-67 13 130 14-65 20 3 21-1 10-48 12 97 13-50 16 2"/>
+                  <path class="signal muted-signal" d="M242 147l9-5 10 8 12-4 10 2 12-6 12 8 17-3"/>
+                  <path class="signal" d="M324 147l17-2 8-61 13 122 13-60 19 2 23-1 9-45 12 91 12-47 20 2 30-1"/>
+                  <text x="45" y="260">time-aligned output</text><text x="248" y="60">quality check</text>
+                </svg>
+                <figcaption>Conceptual visualization · synthetic waveform</figcaption>
+              </figure>
+            </article>
+
+            <article class="project">
+              <div class="project-copy">
+                <p class="project-number">04 · Measurement science</p>
+                <h3>Neonatal Bilirubin Device Validation and Calibration Analysis</h3>
+                <p>Evaluating whether devices agree—not merely whether their measurements correlate.</p>
+                <p class="contribution-label">My contribution</p>
+                <ul>
+                  <li>Analyzed paired measurements across devices, batches, and measurement ranges.</li>
+                  <li>Used Bland–Altman reasoning to distinguish average bias from individual agreement.</li>
+                  <li>Reviewed calibration designs for independence, identifiability, and reference-device dependence.</li>
+                  <li>Translated statistical findings into bilingual reports and validation recommendations.</li>
+                </ul>
+                <div class="method-tags"><span>Bland–Altman</span><span>Measurement error</span><span>Calibration</span><span>Study design</span></div>
+              </div>
+              <figure class="visual-card">
+                <svg viewBox="0 0 520 280" role="img" aria-labelledby="v4-title v4-desc">
+                  <title id="v4-title">Conceptual device agreement analysis</title>
+                  <desc id="v4-desc">Synthetic paired differences are plotted around an average bias and limits of agreement.</desc>
+                  <g class="grid"><path d="M55 55H480M55 110H480M55 165H480M55 220H480"/><path d="M110 35V240M200 35V240M290 35V240M380 35V240M470 35V240"/></g>
+                  <path class="limit" d="M55 73H480M55 201H480"/><path class="mean" d="M55 140H480"/>
+                  <g class="scatter"><circle cx="78" cy="128" r="5"/><circle cx="105" cy="155" r="5"/><circle cx="139" cy="104" r="5"/><circle cx="175" cy="145" r="5"/><circle cx="203" cy="173" r="5"/><circle cx="239" cy="121" r="5"/><circle cx="275" cy="150" r="5"/><circle cx="310" cy="91" r="5"/><circle cx="343" cy="160" r="5"/><circle cx="381" cy="129" r="5"/><circle cx="418" cy="180" r="5"/><circle cx="454" cy="111" r="5"/></g>
+                  <text x="58" y="66">upper limit</text><text x="58" y="134">mean bias</text><text x="58" y="218">lower limit</text>
+                </svg>
+                <figcaption>Conceptual Bland–Altman plot · synthetic data</figcaption>
+              </figure>
+            </article>
+
+            <article class="project">
+              <div class="project-copy">
+                <p class="project-number">05 · Research infrastructure</p>
+                <h3>Biomedical Data Auditing and Human Review Tools</h3>
+                <p>Building a traceable path from database records to analysis-ready signals.</p>
+                <p class="contribution-label">My contribution</p>
+                <ul>
+                  <li>Connected measurement IDs, participant records, signal references, and local files.</li>
+                  <li>Built resumable download, deduplication, integrity, pairing, and quality-screening workflows.</li>
+                  <li>Created a local visualization dashboard for structured human signal review.</li>
+                  <li>Audited cross-channel sampling, duration, common coverage, missingness, and flat signals.</li>
+                </ul>
+                <div class="method-tags"><span>SQL</span><span>Data provenance</span><span>Quality control</span><span>Human review</span></div>
+              </div>
+              <figure class="visual-card">
+                <svg viewBox="0 0 520 280" role="img" aria-labelledby="v5-title v5-desc">
+                  <title id="v5-title">Conceptual reproducible data pipeline</title>
+                  <desc id="v5-desc">A sequence connects source records to integrity checks, signal quality review, and a curated research dataset.</desc>
+                  <g class="pipeline-line"><path d="M96 140H160M238 140H298M376 140H438"/></g>
+                  <rect class="pipe-node" x="35" y="100" width="62" height="80" rx="5"/><text x="66" y="132" text-anchor="middle">raw</text><text x="66" y="151" text-anchor="middle">records</text>
+                  <rect class="pipe-node" x="160" y="100" width="78" height="80" rx="5"/><text x="199" y="132" text-anchor="middle">integrity</text><text x="199" y="151" text-anchor="middle">checks</text>
+                  <rect class="pipe-node" x="298" y="100" width="78" height="80" rx="5"/><text x="337" y="132" text-anchor="middle">quality</text><text x="337" y="151" text-anchor="middle">review</text>
+                  <rect class="pipe-node accent-node" x="438" y="100" width="50" height="80" rx="5"/><path class="check" d="m450 141 8 8 17-21"/>
+                  <text x="35" y="225">traceable</text><text x="220" y="225">auditable</text><text x="404" y="225">reproducible</text>
+                </svg>
+                <figcaption>Conceptual workflow · no internal records</figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="shell section research" id="research">
+        <p class="section-label">Research interests</p>
+        <div class="research-intro">
+          <h2>I want to make health predictions more reliable, transparent, and useful.</h2>
+          <p>
+            I am most energized by problems where statistical rigor and modern AI need each other: longitudinal histories that arrive irregularly, wearable signals with missingness and noise, rare outcomes, population heterogeneity, and predictions whose uncertainty matters. I hope to develop methods that are not only accurate on one dataset, but scientifically defensible and valuable for healthcare and public health.
+          </p>
+        </div>
+        <div class="interest-grid">
+          <article><span>01</span><h3>Longitudinal & event-time modeling</h3><p>Dynamic prediction from patient histories with unequal length, irregular timing, and changing risk.</p></article>
+          <article><span>02</span><h3>Wearable & multimodal sensing</h3><p>Robust representations that account for signal quality, missingness, and device heterogeneity.</p></article>
+          <article><span>03</span><h3>Uncertainty & calibration</h3><p>Bayesian reasoning, credible risk estimates, and evaluation that supports responsible decisions.</p></article>
+        </div>
+      </section>
+
+      <section class="open-source-band">
+        <div class="shell open-source">
+          <div>
+            <p class="section-label">Open source</p>
+            <h2>DeviceAgreement</h2>
+          </div>
+          <p>A reproducible Python toolkit for medical device agreement analysis, participant-aware bootstrap, Bland–Altman visualization, and auditable reporting.</p>
+          <a href="https://github.com/yuntaoxue2026/Device-Agreement" target="_blank" rel="noreferrer">View repository ↗</a>
+        </div>
+      </section>
+
+      <section class="shell contact" id="contact">
+        <p class="section-label">Contact</p>
+        <h2>Let’s talk about statistics, AI, and better evidence for health.</h2>
+        <div class="contact-links">
+          <a href="mailto:1155278036@link.cuhk.edu.hk">1155278036@link.cuhk.edu.hk</a>
+          <a href="https://github.com/yuntaoxue2026" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
       </section>
     </main>
 
-    <footer class="overview-footer">
-      <span>Hong Kong</span>
-      <span>Statistical machine learning for health</span>
+    <footer class="site-footer">
+      <div class="shell"><span>Yuntao Xue</span><span>Statistical machine learning for health</span></div>
     </footer>
-
-    <dialog class="topic-dialog" id="education-dialog" aria-labelledby="education-title">
-      <div class="dialog-frame">
-        <header class="dialog-header">
-          <div class="dialog-identity">
-            <div class="logo-box cuhk-logo"><img src="assets/cuhk-logo.png" alt="The Chinese University of Hong Kong" /></div>
-            <div><p class="panel-kicker">Education</p><h2 id="education-title">Statistics to AI for Science</h2></div>
-          </div>
-          <button class="dialog-close" type="button" aria-label="Close education panel">Close ×</button>
-        </header>
-
-        <div class="dialog-content">
-          <div class="degree-grid">
-            <article>
-              <p class="item-meta">2026—present · Hong Kong</p>
-              <h3>MSc in Artificial Intelligence for Science</h3>
-              <p>The Chinese University of Hong Kong</p>
-              <small>Expected completion: early 2028</small>
-            </article>
-            <article>
-              <p class="item-meta">Completed 2026 · Shenzhen</p>
-              <h3>BSc in Statistics</h3>
-              <p>The Chinese University of Hong Kong</p>
-              <small>Studies completed at CUHK-Shenzhen</small>
-            </article>
-          </div>
-
-          <div class="panel-section">
-            <p class="panel-label">Selected coursework</p>
-            <div class="chip-list">
-              <span>Machine Learning</span><span>Statistical Machine Learning</span><span>Generalized Linear Models</span>
-              <span>Bayesian Statistics</span><span>Multivariate Statistical Analysis</span><span>Statistical Genomics</span><span>AI Practicum</span>
-            </div>
-          </div>
-
-          <div class="skill-columns panel-section">
-            <article><h3>Statistics</h3><p>Regression and GLMs, Bayesian and empirical-Bayes reasoning, bootstrap methods, measurement agreement, calibration, and uncertainty assessment.</p></article>
-            <article><h3>Machine learning</h3><p>PyTorch, CNNs, Transformers, LSTMs, LightGBM, representation learning, multimodal fusion, and multi-GPU training.</p></article>
-            <article><h3>Research practice</h3><p>Longitudinal modeling, physiological signals, patient-level validation, subgroup analysis, SQL, and auditable data pipelines.</p></article>
-          </div>
-
-          <a class="official-link" href="https://www.cuhk.edu.hk/english/" target="_blank" rel="noreferrer">Visit CUHK official website ↗</a>
-        </div>
-      </div>
-    </dialog>
-
-    <dialog class="topic-dialog" id="experience-dialog" aria-labelledby="experience-title">
-      <div class="dialog-frame">
-        <header class="dialog-header">
-          <div class="dialog-identity">
-            <div class="logo-box e3a-logo"><img src="assets/e3a-healthcare-logo.png" alt="E3A Healthcare" /></div>
-            <div><p class="panel-kicker">July 2025—present</p><h2 id="experience-title">AI Engineer</h2></div>
-          </div>
-          <button class="dialog-close" type="button" aria-label="Close research experience panel">Close ×</button>
-        </header>
-
-        <div class="dialog-content">
-          <p class="panel-intro">At E3A Healthcare, I contribute across problem definition, data auditing, signal processing, model development, evaluation, and technical communication. Open a project below to see my contribution.</p>
-
-          <div class="confidentiality-note"><span aria-hidden="true">○</span><p>All graphics are conceptual and synthetic. No patient data, internal metrics, product interfaces, or proprietary architecture are shown.</p></div>
-
-          <div class="project-accordion">
-            <details name="projects">
-              <summary><span>01</span><div><strong>Delivery-Time Forecasting</strong><small>Longitudinal maternal and fetal monitoring data</small></div><i>+</i></summary>
-              <div class="project-detail">
-                <div>
-                  <p class="panel-label">My contribution</p>
-                  <ul><li>Developed temporal models combining physiological signals, gestational age, clinical variables, and patient history.</li><li>Implemented CNN–Transformer representations and patient-level LSTM components.</li><li>Designed patient-level evaluation, probabilistic outputs, interval analysis, and subgroup checks.</li><li>Maintained training and inference code, including four-GPU distributed training workflows.</li></ul>
-                  <div class="chip-list compact"><span>Longitudinal data</span><span>PyTorch</span><span>Calibration</span><span>Patient-level validation</span></div>
-                </div>
-                <svg class="detail-visual" viewBox="0 0 420 210" role="img" aria-label="Conceptual longitudinal prediction with irregular observations and uncertainty">
-                  <g class="grid"><path d="M35 45H390M35 90H390M35 135H390M35 180H390"/></g><path class="viz-area" d="M35 145C90 90 120 145 165 100S240 62 275 98 330 152 390 90V140C335 185 310 135 274 132S210 150 165 140 92 165 35 171Z"/><path class="viz-line" d="M35 158C90 105 120 157 165 117S240 79 275 115 330 169 390 108"/><g class="viz-dots"><circle cx="35" cy="158" r="5"/><circle cx="118" cy="150" r="5"/><circle cx="165" cy="117" r="5"/><circle cx="275" cy="115" r="5"/><circle cx="390" cy="108" r="5"/></g>
-                </svg>
-              </div>
-            </details>
-
-            <details name="projects">
-              <summary><span>02</span><div><strong>Preterm Risk & Population-Aware Modeling</strong><small>Heterogeneity, rare outcomes, and careful interpretation</small></div><i>+</i></summary>
-              <div class="project-detail">
-                <div>
-                  <p class="panel-label">My contribution</p>
-                  <ul><li>Compared specialist models, soft mixture-of-experts designs, and a unified full-data model.</li><li>Investigated clinical and learned features for routing and expert-training strategies.</li><li>Evaluated preterm probability and seven-day delivery risk without conflating the outcomes.</li><li>Separated patient-level from measurement-level conclusions and documented small-sample limits.</li></ul>
-                  <div class="chip-list compact"><span>Mixture of experts</span><span>Rare outcomes</span><span>Subgroup analysis</span><span>Risk thresholds</span></div>
-                </div>
-                <svg class="detail-visual" viewBox="0 0 420 210" role="img" aria-label="Conceptual model routing to two specialist pathways">
-                  <g class="viz-links"><path d="M80 105H155M215 105C250 105 250 58 285 58M215 105C250 105 250 152 285 152M345 58C380 58 380 105 397 105M345 152C380 152 380 105 397 105"/></g><rect class="viz-node" x="25" y="75" width="55" height="60" rx="5"/><rect class="viz-node blue" x="155" y="75" width="60" height="60" rx="5"/><circle class="viz-node" cx="315" cy="58" r="30"/><circle class="viz-node" cx="315" cy="152" r="30"/><circle class="viz-result" cx="397" cy="105" r="22"/><text x="52" y="109" text-anchor="middle">data</text><text x="185" y="109" text-anchor="middle">gate</text><text x="315" y="62" text-anchor="middle">A</text><text x="315" y="156" text-anchor="middle">B</text>
-                </svg>
-              </div>
-            </details>
-
-            <details name="projects">
-              <summary><span>03</span><div><strong>Fetal Heart Rate Signal Processing</strong><small>Signal assumptions, timing, quality, and evaluation</small></div><i>+</i></summary>
-              <div class="project-detail">
-                <div>
-                  <p class="panel-label">My contribution</p>
-                  <ul><li>Reviewed the processing chain from preprocessing and template matching to heart-rate output.</li><li>Detected inconsistent sampling assumptions and implemented rate recognition and adaptation.</li><li>Improved timestamp alignment, missing-value handling, signal-quality gating, and state control.</li><li>Kept accuracy claims tied to the availability of reliable reference signals.</li></ul>
-                  <div class="chip-list compact"><span>FPCG</span><span>Signal quality</span><span>Time alignment</span><span>Algorithm audit</span></div>
-                </div>
-                <svg class="detail-visual" viewBox="0 0 420 210" role="img" aria-label="Conceptual physiological waveform with a quality-control interval">
-                  <rect class="viz-zone" x="185" y="25" width="65" height="160" rx="4"/><path class="viz-line" d="M20 112l18-2 9-45 12 91 13-46 20 3 20-2 8-58 13 114 14-56 22 2 16-1"/><path class="viz-line green dashed" d="M185 112l10-5 12 8 11-5 12 3 20-2"/><path class="viz-line" d="M250 112l18-2 9-48 12 97 13-49 20 3 20-2 8-42 13 86 14-44 26 1"/>
-                </svg>
-              </div>
-            </details>
-
-            <details name="projects">
-              <summary><span>04</span><div><strong>Neonatal Bilirubin Device Validation</strong><small>Agreement, calibration, and study design</small></div><i>+</i></summary>
-              <div class="project-detail">
-                <div>
-                  <p class="panel-label">My contribution</p>
-                  <ul><li>Analyzed paired measurements across devices, batches, and measurement ranges.</li><li>Used Bland–Altman reasoning to distinguish average bias from individual agreement.</li><li>Reviewed calibration designs for independence, identifiability, and reference-device dependence.</li><li>Translated statistical findings into bilingual reports and validation recommendations.</li></ul>
-                  <div class="chip-list compact"><span>Bland–Altman</span><span>Measurement error</span><span>Calibration</span><span>Study design</span></div>
-                </div>
-                <svg class="detail-visual" viewBox="0 0 420 210" role="img" aria-label="Conceptual Bland-Altman agreement plot using synthetic points">
-                  <g class="grid"><path d="M30 45H390M30 90H390M30 135H390M30 180H390"/></g><path class="viz-limit" d="M30 52H390M30 165H390"/><path class="viz-mean" d="M30 108H390"/><g class="viz-dots"><circle cx="55" cy="98" r="5"/><circle cx="82" cy="132" r="5"/><circle cx="116" cy="78" r="5"/><circle cx="151" cy="113" r="5"/><circle cx="190" cy="142" r="5"/><circle cx="228" cy="96" r="5"/><circle cx="270" cy="125" r="5"/><circle cx="310" cy="74" r="5"/><circle cx="348" cy="137" r="5"/><circle cx="380" cy="103" r="5"/></g>
-                </svg>
-              </div>
-            </details>
-
-            <details name="projects">
-              <summary><span>05</span><div><strong>Biomedical Data Auditing & Review Tools</strong><small>Traceable data from source records to analysis</small></div><i>+</i></summary>
-              <div class="project-detail">
-                <div>
-                  <p class="panel-label">My contribution</p>
-                  <ul><li>Connected measurement IDs, participant records, signal references, and local files.</li><li>Built resumable download, deduplication, integrity, pairing, and quality-screening workflows.</li><li>Audited cross-channel sampling, duration, coverage, missingness, and flat signals.</li><li>Created a local visualization dashboard for structured human signal review.</li></ul>
-                  <div class="chip-list compact"><span>SQL</span><span>Data provenance</span><span>Quality control</span><span>Human review</span></div>
-                </div>
-                <svg class="detail-visual" viewBox="0 0 420 210" role="img" aria-label="Conceptual reproducible biomedical data pipeline">
-                  <g class="viz-links"><path d="M82 105H130M210 105H260M340 105H380"/></g><rect class="viz-node" x="22" y="70" width="60" height="70" rx="5"/><rect class="viz-node" x="130" y="70" width="80" height="70" rx="5"/><rect class="viz-node" x="260" y="70" width="80" height="70" rx="5"/><rect class="viz-node blue" x="380" y="70" width="25" height="70" rx="5"/><text x="52" y="109" text-anchor="middle">source</text><text x="170" y="102" text-anchor="middle">integrity</text><text x="170" y="119" text-anchor="middle">checks</text><text x="300" y="102" text-anchor="middle">quality</text><text x="300" y="119" text-anchor="middle">review</text>
-                </svg>
-              </div>
-            </details>
-          </div>
-
-          <div class="panel-footer-links">
-            <a class="official-link" href="https://e3ahealth.com/" target="_blank" rel="noreferrer">Visit E3A Healthcare ↗</a>
-            <a class="official-link" href="https://github.com/yuntaoxue2026/Device-Agreement" target="_blank" rel="noreferrer">View DeviceAgreement ↗</a>
-          </div>
-        </div>
-      </div>
-    </dialog>
-
-    <dialog class="topic-dialog" id="interests-dialog" aria-labelledby="interests-title">
-      <div class="dialog-frame">
-        <header class="dialog-header">
-          <div class="dialog-identity interest-identity">
-            <div class="interest-symbol" aria-hidden="true"><span></span><span></span><span></span></div>
-            <div><p class="panel-kicker">Research Interests</p><h2 id="interests-title">Reliable learning for real health challenges</h2></div>
-          </div>
-          <button class="dialog-close" type="button" aria-label="Close research interests panel">Close ×</button>
-        </header>
-
-        <div class="dialog-content">
-          <p class="panel-intro large">I am most energized by problems where statistical rigor and modern AI need each other—where data are imperfect, uncertainty matters, and better evidence can improve healthcare or public health decisions.</p>
-
-          <div class="interest-detail-grid">
-            <article><span>01</span><h3>Longitudinal & event-time modeling</h3><p>Dynamic prediction from patient histories with unequal length, irregular timing, missing measurements, and changing risk.</p></article>
-            <article><span>02</span><h3>Wearable & multimodal sensing</h3><p>Robust representations that account for signal quality, missingness, device heterogeneity, and multiple physiological sources.</p></article>
-            <article><span>03</span><h3>Uncertainty & calibration</h3><p>Bayesian reasoning, credible risk estimates, prediction intervals, and evaluation that supports responsible decisions.</p></article>
-            <article><span>04</span><h3>Healthcare & public health</h3><p>Methods for heterogeneous populations, rare outcomes, reliable population evidence, and practical digital health research.</p></article>
-          </div>
-
-          <div class="methods-statement panel-section">
-            <p class="panel-label">How I want to work</p>
-            <h3>Statistics gives me discipline. Machine learning and deep learning give me expressive tools.</h3>
-            <p>I want to combine study design, measurement error analysis, Bayesian ideas, calibration, and uncertainty quantification with flexible temporal models, representation learning, and multimodal AI. My goal is not simply to improve one metric, but to build methods whose claims remain defensible beyond a single dataset.</p>
-          </div>
-
-          <div class="contact-panel">
-            <p>Interested in discussing research?</p>
-            <a href="mailto:1155278036@link.cuhk.edu.hk">1155278036@link.cuhk.edu.hk ↗</a>
-          </div>
-        </div>
-      </div>
-    </dialog>
-
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,25 +1,26 @@
-const openButtons = document.querySelectorAll('[data-dialog]');
-const dialogs = document.querySelectorAll('.topic-dialog');
+const menuButton = document.querySelector('.menu-button');
+const nav = document.querySelector('nav');
+const navLinks = [...nav.querySelectorAll('a')];
 
-openButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const dialog = document.getElementById(button.dataset.dialog);
-    if (!dialog) return;
-    dialog.showModal();
-    document.body.classList.add('dialog-open');
+menuButton.addEventListener('click', () => {
+  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+  menuButton.setAttribute('aria-expanded', String(!isOpen));
+  nav.classList.toggle('open', !isOpen);
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    menuButton.setAttribute('aria-expanded', 'false');
+    nav.classList.remove('open');
   });
 });
 
-dialogs.forEach((dialog) => {
-  const closeButton = dialog.querySelector('.dialog-close');
-  closeButton.addEventListener('click', () => dialog.close());
-
-  dialog.addEventListener('click', (event) => {
-    if (event.target === dialog) dialog.close();
+const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((link) => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
   });
+}, { rootMargin: '-35% 0px -55% 0px' });
 
-  dialog.addEventListener('close', () => {
-    document.body.classList.remove('dialog-open');
-    dialog.querySelectorAll('details[open]').forEach((detail) => detail.removeAttribute('open'));
-  });
-});
+sections.forEach((section) => observer.observe(section));
