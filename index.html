@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0b0e13" />
     <title>Yuntao Xue | Education & Skills</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20261012-exp-v2" />
+    <link rel="stylesheet" href="styles.css?v=20261012-methods-v3" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -85,25 +85,45 @@
 
       <section class="shell page-section" aria-labelledby="skills-title">
         <div class="section-heading compact">
-          <p class="label">Skills</p>
-          <h2 id="skills-title">Methods and tools I use in research.</h2>
+          <p class="label">Methods &amp; technical toolkit</p>
+          <h2 id="skills-title">How I approach health data problems.</h2>
         </div>
         <div class="skill-grid">
-          <article>
-            <h3>Statistics</h3>
-            <p>Regression and GLMs, Bayesian and empirical-Bayes reasoning, multivariate analysis, bootstrap methods, measurement agreement, calibration, and uncertainty assessment.</p>
+          <article class="method-card">
+            <span class="method-number">01</span>
+            <h3>Statistical inference &amp; measurement</h3>
+            <p class="method-purpose">Estimate effects, assess agreement, and make uncertainty visible.</p>
+            <div class="method-tags" aria-label="Statistical methods">
+              <span>Regression &amp; GLMs</span><span>Bayesian reasoning</span><span>Empirical Bayes</span><span>Bootstrap</span><span>Bland–Altman</span><span>Calibration</span>
+            </div>
+            <p class="method-application"><strong>Applied to</strong> device agreement, calibration review, subgroup analysis, and uncertainty assessment.</p>
           </article>
-          <article>
-            <h3>Machine learning & deep learning</h3>
-            <p>PyTorch, CNNs, Transformers, LSTMs, LightGBM, representation learning, multimodal fusion, class-imbalanced learning, and multi-GPU training.</p>
+          <article class="method-card">
+            <span class="method-number">02</span>
+            <h3>Longitudinal &amp; multimodal modeling</h3>
+            <p class="method-purpose">Learn from physiological signals, repeated measurements, and patient context together.</p>
+            <div class="method-tags" aria-label="Machine learning methods">
+              <span>CNNs</span><span>Transformers</span><span>LSTMs</span><span>LightGBM</span><span>Multimodal fusion</span><span>Mixture of experts</span>
+            </div>
+            <p class="method-application"><strong>Applied to</strong> delivery-time forecasting, preterm risk, and irregular clinical time series.</p>
           </article>
-          <article>
-            <h3>Health data research</h3>
-            <p>Longitudinal modeling, physiological time series, patient-level validation, subgroup analysis, signal-quality assessment, and medical device agreement.</p>
+          <article class="method-card">
+            <span class="method-number">03</span>
+            <h3>Validation for real-world health AI</h3>
+            <p class="method-purpose">Test the clinical claim a model or measurement system is actually making.</p>
+            <div class="method-tags" aria-label="Validation methods">
+              <span>Patient-level splits</span><span>Leakage control</span><span>Horizon evaluation</span><span>Class imbalance</span><span>Subgroup analysis</span><span>Reference comparison</span>
+            </div>
+            <p class="method-application"><strong>Applied to</strong> repeated observations, rare outcomes, physiological algorithms, and medical devices.</p>
           </article>
-          <article>
-            <h3>Data & reproducibility</h3>
-            <p>Python, SQL, database querying, auditable data pipelines, experiment tracking, statistical reporting, visualization, and reproducible evaluation.</p>
+          <article class="method-card">
+            <span class="method-number">04</span>
+            <h3>Research engineering &amp; reproducibility</h3>
+            <p class="method-purpose">Build data and modeling workflows that can be inspected, rerun, and reviewed.</p>
+            <div class="method-tags" aria-label="Engineering tools">
+              <span>Python</span><span>PyTorch</span><span>SQL</span><span>Multi-GPU DDP</span><span>Integrity checks</span><span>Experiment tracking</span>
+            </div>
+            <p class="method-application"><strong>Applied to</strong> auditable data pipelines, model training and inference, signal QA, and review dashboards.</p>
           </article>
         </div>
       </section>
