@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0b0e13" />
     <title>Yuntao Xue | E3A Experience</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20261012-methods-v3" />
+    <link rel="stylesheet" href="styles.css?v=20261012-highlights-v4" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -58,16 +58,16 @@
               <div>
                 <p class="project-domain">Longitudinal prediction</p>
                 <h3>Delivery-Time Forecasting</h3>
-                <p class="project-summary">Built patient-aware temporal modeling workflows for irregular maternal and fetal monitoring data.</p>
+                <div class="project-highlight"><span>Highlight · Why it matters</span><p>Built a leakage-aware modeling and validation framework that connects repeated maternal–fetal monitoring data to clinically relevant delivery horizons.</p></div>
               </div>
             </div>
             <div class="project-card-body">
               <div class="project-contribution">
-                <p class="contribution-label">My contribution</p>
+                <p class="contribution-label">Key contributions</p>
                 <ul>
-                  <li>Combined fetal heart rate, uterine contractions, gestational age, clinical variables, and patient history in multimodal temporal models.</li>
-                  <li>Designed patient-level splits and horizon-specific evaluation to reduce leakage and test clinically relevant performance.</li>
-                  <li>Maintained reproducible training and inference workflows, including four-GPU distributed training.</li>
+                  <li>Integrated fetal heart rate, uterine contractions, gestational age, clinical variables, and patient history.</li>
+                  <li>Implemented CNN–Transformer signal representations with patient-level LSTM components.</li>
+                  <li>Designed patient-level evaluation and maintained reproducible training and inference, including four-GPU DDP.</li>
                 </ul>
               </div>
               <div class="expertise-tags" aria-label="Expertise used"><span>Time series</span><span>Multimodal DL</span><span>PyTorch</span><span>Transformers</span><span>Clinical validation</span></div>
@@ -80,16 +80,16 @@
               <div>
                 <p class="project-domain">Heterogeneity &amp; rare outcomes</p>
                 <h3>Preterm Risk Modeling</h3>
-                <p class="project-summary">Tested population-aware strategies for rare outcomes without overstating limited holdout evidence.</p>
+                <div class="project-highlight"><span>Highlight · Why it matters</span><p>Established a defensible comparison of population-aware strategies for a rare outcome while making small-sample and class-imbalance limits explicit.</p></div>
               </div>
             </div>
             <div class="project-card-body">
               <div class="project-contribution">
-                <p class="contribution-label">My contribution</p>
+                <p class="contribution-label">Key contributions</p>
                 <ul>
-                  <li>Compared unified models, specialist models, and soft mixture-of-experts designs for term and preterm populations.</li>
-                  <li>Investigated clinical and learned features for routing, together with alternative expert-training strategies.</li>
-                  <li>Separated patient- and measurement-level conclusions while surfacing class-imbalance and small-sample limitations.</li>
+                  <li>Benchmarked unified, specialist, and soft mixture-of-experts models.</li>
+                  <li>Tested clinical and learned features for routing and alternative expert-training strategies.</li>
+                  <li>Separated patient- from measurement-level conclusions and flagged evidence limitations.</li>
                 </ul>
               </div>
               <div class="expertise-tags" aria-label="Expertise used"><span>Rare outcomes</span><span>Mixture of experts</span><span>Class imbalance</span><span>Model evaluation</span></div>
@@ -102,16 +102,16 @@
               <div>
                 <p class="project-domain">Physiological signals</p>
                 <h3>Fetal Heart Rate Signal Processing</h3>
-                <p class="project-summary">Strengthened an inherited fetal phonocardiography pipeline for real-world signal loss and inconsistent sampling.</p>
+                <div class="project-highlight"><span>Highlight · Why it matters</span><p>Identified and addressed inconsistent sampling assumptions and failure states that could otherwise distort heart-rate timing and continuity.</p></div>
               </div>
             </div>
             <div class="project-card-body">
               <div class="project-contribution">
-                <p class="contribution-label">My contribution</p>
+                <p class="contribution-label">Key contributions</p>
                 <ul>
                   <li>Audited the full pipeline from preprocessing and template matching to RR intervals and heart-rate output.</li>
                   <li>Detected conflicting 250 Hz and 500 Hz assumptions and implemented sampling-rate recognition and adaptation.</li>
-                  <li>Improved alignment, missing-data handling, off-body detection, and recovery logic while keeping claims tied to reference evidence.</li>
+                  <li>Strengthened alignment, missing-data, off-body, and recovery logic while tying accuracy claims to reference evidence.</li>
                 </ul>
               </div>
               <div class="expertise-tags" aria-label="Expertise used"><span>Signal processing</span><span>Sampling theory</span><span>Quality gating</span><span>Algorithm evaluation</span></div>
@@ -124,16 +124,16 @@
               <div>
                 <p class="project-domain">Measurement science</p>
                 <h3>Neonatal Bilirubin Device Validation</h3>
-                <p class="project-summary">Evaluated whether measurements agreed—not merely correlated—across devices, batches, and measurement ranges.</p>
+                <div class="project-highlight"><span>Highlight · Why it matters</span><p>Shifted evaluation from correlation alone to measurement agreement, exposing device-, batch-, and range-specific error patterns relevant to calibration decisions.</p></div>
               </div>
             </div>
             <div class="project-card-body">
               <div class="project-contribution">
-                <p class="contribution-label">My contribution</p>
+                <p class="contribution-label">Key contributions</p>
                 <ul>
                   <li>Analyzed paired errors using Bland–Altman reasoning and device-, batch-, and range-level comparisons.</li>
-                  <li>Reviewed calibration designs for split independence, parameter identifiability, reference-device dependence, and stability.</li>
-                  <li>Translated findings into bilingual reports, management summaries, and recommendations for further validation.</li>
+                  <li>Audited calibration designs for split independence, identifiability, reference dependence, and stability.</li>
+                  <li>Converted findings into bilingual reports and concrete recommendations for further validation.</li>
                 </ul>
               </div>
               <div class="expertise-tags" aria-label="Expertise used"><span>Measurement error</span><span>Bland–Altman</span><span>Calibration</span><span>Experimental design</span><span>Statistical reporting</span></div>
@@ -146,16 +146,16 @@
               <div>
                 <p class="project-domain">Research infrastructure</p>
                 <h3>Biomedical Data Auditing &amp; Review Tools</h3>
-                <p class="project-summary">Turned fragmented biomedical records and signal files into auditable datasets and human-review workflows.</p>
+                <div class="project-highlight"><span>Highlight · Why it matters</span><p>Built the traceability and quality-control layer needed to turn fragmented medical records and signal files into reviewable research data.</p></div>
               </div>
             </div>
             <div class="project-card-body">
               <div class="project-contribution">
-                <p class="contribution-label">My contribution</p>
+                <p class="contribution-label">Key contributions</p>
                 <ul>
                   <li>Traced relationships among participant records, measurement IDs, signal URLs, and local files.</li>
-                  <li>Built resumable download, deduplication, integrity-checking, signal-pairing, and automated screening workflows.</li>
-                  <li>Created a local dashboard for signal visualization and structured human quality assessment.</li>
+                  <li>Built resumable download, deduplication, integrity-checking, pairing, and automated screening workflows.</li>
+                  <li>Audited signal coverage and created a dashboard for structured human quality review.</li>
                 </ul>
               </div>
               <div class="expertise-tags" aria-label="Expertise used"><span>SQL</span><span>Data pipelines</span><span>Signal QA</span><span>Visualization</span><span>Reproducibility</span></div>
