@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Yuntao Xue's work as an AI Engineer at E3A Healthcare across longitudinal prediction, physiological signals, medical device validation, and health data infrastructure." />
+    <meta name="theme-color" content="#0b0e13" />
+    <title>Yuntao Xue | E3A Experience</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="index.html"><span>Yuntao Xue</span><small>AI · Statistics · Health</small></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <nav id="nav-links" aria-label="Main navigation">
+          <a href="index.html">Education</a>
+          <a class="active" href="experience.html">E3A Experience</a>
+          <a href="interests.html">Research Interests</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="shell intro page-intro">
+        <div>
+          <p class="label">E3A Healthcare · July 2025—present</p>
+          <h1>AI Engineer</h1>
+        </div>
+        <div class="intro-side">
+          <p class="lead">Working with real healthcare data taught me that modeling begins long before training—and validation continues long after it.</p>
+          <p>I contribute across problem definition, data auditing, signal processing, model development, evaluation, and technical communication under the direct technical guidance of the CTO.</p>
+        </div>
+      </section>
+
+      <section class="shell page-section projects-section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="label">Selected projects</p>
+          <h2 id="projects-title">My contributions</h2>
+        </div>
+
+        <div class="project-stack">
+          <article class="project">
+            <div class="project-title"><span>01</span><div><p>Longitudinal prediction</p><h3>Delivery-Time Forecasting from Maternal and Fetal Monitoring Data</h3></div></div>
+            <div class="contributions">
+              <p class="contribution-label">My contribution</p>
+              <ul>
+                <li>Developed and iterated temporal models combining fetal heart rate, uterine contraction signals, gestational age, clinical variables, and patient history.</li>
+                <li>Implemented CNN–Transformer signal representations and patient-level LSTM components for repeated, irregularly timed measurements.</li>
+                <li>Explored population priors, empirical-Bayes ideas, probabilistic outputs, prediction intervals, and short-horizon delivery risk.</li>
+                <li>Designed patient-level evaluation and information-safe retrospective testing to reduce leakage from repeated measurements or future information.</li>
+                <li>Analyzed overall, near-delivery, term, and preterm performance; maintained training and inference code, including four-GPU distributed training.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-title"><span>02</span><div><p>Heterogeneity & rare outcomes</p><h3>Preterm Risk and Population-Aware Model Iteration</h3></div></div>
+            <div class="contributions">
+              <p class="contribution-label">My contribution</p>
+              <ul>
+                <li>Compared specialist models, soft mixture-of-experts designs, and a unified full-data model for term and preterm populations.</li>
+                <li>Investigated clinical and learned-representation features for model routing and different expert-training strategies.</li>
+                <li>Evaluated measurement-level preterm probability and seven-day delivery risk while separating patient-level from measurement-level conclusions.</li>
+                <li>Identified small-sample and class-imbalance limitations and corrected interpretations that exceeded the available holdout evidence.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-title"><span>03</span><div><p>Physiological signals</p><h3>Fetal Heart Rate Signal Processing and Algorithm Evaluation</h3></div></div>
+            <div class="contributions">
+              <p class="contribution-label">My contribution</p>
+              <ul>
+                <li>Reviewed an inherited fetal phonocardiography pipeline from preprocessing and template matching through RR intervals and heart-rate outputs.</li>
+                <li>Investigated signal dropouts, output rate, smoothing, quality gating, rescue search, and template-based recovery strategies.</li>
+                <li>Detected inconsistent 250 Hz and 500 Hz sampling assumptions and implemented recognition and adaptation logic.</li>
+                <li>Improved timestamp alignment, missing-value handling, off-body detection, and state-control logic while preserving physiological time continuity.</li>
+                <li>Kept accuracy claims tied to the availability of reliable reference signals rather than treating continuity alone as evidence of correctness.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-title"><span>04</span><div><p>Measurement science</p><h3>Neonatal Bilirubin Device Validation and Calibration Analysis</h3></div></div>
+            <div class="contributions">
+              <p class="contribution-label">My contribution</p>
+              <ul>
+                <li>Analyzed paired measurements across multiple devices and batches, focusing on systematic differences, error distributions, and measurement-level effects.</li>
+                <li>Used Bland–Altman reasoning and device-, batch-, and range-level analysis to distinguish average bias from individual agreement.</li>
+                <li>Reviewed calibration designs for split independence, repeated-device leakage, parameter identifiability, reference-device dependence, and stability.</li>
+                <li>Translated statistical findings into bilingual technical reports, management summaries, and recommendations for further validation.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-title"><span>05</span><div><p>Research infrastructure</p><h3>Biomedical Data Auditing and Human Review Tools</h3></div></div>
+            <div class="contributions">
+              <p class="contribution-label">My contribution</p>
+              <ul>
+                <li>Queried medical databases and traced relationships among measurement IDs, participant records, signal URLs, and local files.</li>
+                <li>Built resumable download, deduplication, integrity-checking, signal-pairing, and automated quality-screening workflows.</li>
+                <li>Audited cross-channel sampling rates, sample counts, durations, common coverage, missingness, and flat signals.</li>
+                <li>Created a local review dashboard for signal visualization and structured human quality assessment.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="shell reflection">
+        <p class="label">What this work means to me</p>
+        <blockquote>“The most valuable lesson has been learning to connect a model’s output back to the data, the measurement process, and the decision it may inform.”</blockquote>
+      </section>
+
+      <section class="shell next-page">
+        <p>Next</p>
+        <a href="interests.html"><span>What I want to study next</span><span>→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell"><span>Yuntao Xue</span><span>1155278036@link.cuhk.edu.hk</span></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
