@@ -122,11 +122,14 @@
                 <p class="project-number">01 · Longitudinal prediction</p>
                 <h3>Delivery-Time Forecasting from Maternal and Fetal Monitoring Data</h3>
                 <p>Modeling repeated, irregular measurements while respecting what was known at each prediction time.</p>
+                <p class="contribution-label">My contribution</p>
                 <ul>
                   <li>Developed temporal models combining physiological signals, gestational age, clinical variables, and patient history.</li>
                   <li>Implemented CNN–Transformer representations and patient-level LSTM components.</li>
                   <li>Designed patient-level evaluation, probabilistic outputs, interval analysis, and subgroup checks.</li>
+                  <li>Maintained training and inference code, including four-GPU distributed training workflows.</li>
                 </ul>
+                <div class="method-tags"><span>Longitudinal data</span><span>PyTorch</span><span>Calibration</span><span>Patient-level validation</span></div>
               </div>
               <figure class="visual-card">
                 <svg viewBox="0 0 520 280" role="img" aria-labelledby="v1-title v1-desc">
@@ -147,11 +150,14 @@
                 <p class="project-number">02 · Heterogeneity & rare outcomes</p>
                 <h3>Preterm Risk and Population-Aware Model Iteration</h3>
                 <p>Testing how different modeling strategies behave across heterogeneous and imbalanced populations.</p>
+                <p class="contribution-label">My contribution</p>
                 <ul>
                   <li>Compared specialist models, soft mixture-of-experts designs, and a unified full-data model.</li>
                   <li>Investigated clinical and learned features for routing and expert-training strategies.</li>
                   <li>Separated patient-level from measurement-level conclusions and documented small-sample limits.</li>
+                  <li>Evaluated preterm probability and seven-day delivery risk without conflating the two outcomes.</li>
                 </ul>
+                <div class="method-tags"><span>Mixture of experts</span><span>Rare outcomes</span><span>Subgroup analysis</span><span>Risk thresholds</span></div>
               </div>
               <figure class="visual-card">
                 <svg viewBox="0 0 520 280" role="img" aria-labelledby="v2-title v2-desc">
@@ -174,11 +180,14 @@
                 <p class="project-number">03 · Physiological signals</p>
                 <h3>Fetal Heart Rate Signal Processing and Algorithm Evaluation</h3>
                 <p>Tracing failures from raw signal assumptions through timing, state, and output behavior.</p>
+                <p class="contribution-label">My contribution</p>
                 <ul>
                   <li>Reviewed the processing chain from preprocessing and template matching to heart-rate output.</li>
                   <li>Detected inconsistent sampling assumptions and implemented rate recognition and adaptation.</li>
                   <li>Improved timestamp alignment, missing-value handling, signal-quality gating, and state control.</li>
+                  <li>Kept accuracy claims tied to the availability of reliable reference signals.</li>
                 </ul>
+                <div class="method-tags"><span>FPCG</span><span>Signal quality</span><span>Time alignment</span><span>Algorithm audit</span></div>
               </div>
               <figure class="visual-card">
                 <svg viewBox="0 0 520 280" role="img" aria-labelledby="v3-title v3-desc">
@@ -200,11 +209,14 @@
                 <p class="project-number">04 · Measurement science</p>
                 <h3>Neonatal Bilirubin Device Validation and Calibration Analysis</h3>
                 <p>Evaluating whether devices agree—not merely whether their measurements correlate.</p>
+                <p class="contribution-label">My contribution</p>
                 <ul>
                   <li>Analyzed paired measurements across devices, batches, and measurement ranges.</li>
                   <li>Used Bland–Altman reasoning to distinguish average bias from individual agreement.</li>
                   <li>Reviewed calibration designs for independence, identifiability, and reference-device dependence.</li>
+                  <li>Translated statistical findings into bilingual reports and validation recommendations.</li>
                 </ul>
+                <div class="method-tags"><span>Bland–Altman</span><span>Measurement error</span><span>Calibration</span><span>Study design</span></div>
               </div>
               <figure class="visual-card">
                 <svg viewBox="0 0 520 280" role="img" aria-labelledby="v4-title v4-desc">
@@ -224,11 +236,14 @@
                 <p class="project-number">05 · Research infrastructure</p>
                 <h3>Biomedical Data Auditing and Human Review Tools</h3>
                 <p>Building a traceable path from database records to analysis-ready signals.</p>
+                <p class="contribution-label">My contribution</p>
                 <ul>
                   <li>Connected measurement IDs, participant records, signal references, and local files.</li>
                   <li>Built resumable download, deduplication, integrity, pairing, and quality-screening workflows.</li>
                   <li>Created a local visualization dashboard for structured human signal review.</li>
+                  <li>Audited cross-channel sampling, duration, common coverage, missingness, and flat signals.</li>
                 </ul>
+                <div class="method-tags"><span>SQL</span><span>Data provenance</span><span>Quality control</span><span>Human review</span></div>
               </div>
               <figure class="visual-card">
                 <svg viewBox="0 0 520 280" role="img" aria-labelledby="v5-title v5-desc">
