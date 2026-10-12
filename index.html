@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Yuntao Xue is an MSc student in Artificial Intelligence for Science at The Chinese University of Hong Kong, working on statistical machine learning for longitudinal, wearable, and multimodal biomedical data."
+    />
+    <meta name="theme-color" content="#f4f1e9" />
+    <meta property="og:title" content="Yuntao Xue | Statistical Machine Learning & Health Data" />
+    <meta
+      property="og:description"
+      content="Researching reliable prediction from longitudinal and physiological health data."
+    />
+    <meta property="og:type" content="website" />
+    <title>Yuntao Xue | Statistical Machine Learning & Health Data</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yuntao Xue",
+        "url": "https://yuntaoxue2026.github.io/",
+        "email": "mailto:1155278036@link.cuhk.edu.hk",
+        "sameAs": ["https://github.com/yuntaoxue2026"],
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "The Chinese University of Hong Kong"
+        },
+        "knowsAbout": [
+          "Statistical machine learning",
+          "Longitudinal data",
+          "Biomedical data science",
+          "Wearable sensing",
+          "Uncertainty quantification"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a class="wordmark" href="#top" aria-label="Yuntao Xue, home">
+          <span class="wordmark-mark" aria-hidden="true">YX</span>
+          <span>Yuntao Xue</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Switch color theme">
+            <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+            <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5a8.5 8.5 0 1 0 12 12Z"/></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Statistics × Machine Learning × Health</p>
+          <h1 id="hero-title">Building reliable models for <em>messy, longitudinal</em> health data.</h1>
+          <p class="hero-intro">
+            I’m <strong>Yuntao Xue</strong>, an MSc student in Artificial Intelligence for Science at
+            The Chinese University of Hong Kong. My work sits at the intersection of statistical
+            reasoning, machine learning, and real-world biomedical data.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="mailto:1155278036@link.cuhk.edu.hk">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="signal-panel reveal" aria-label="Abstract visualization of irregular longitudinal health measurements">
+          <div class="panel-label">
+            <span>Longitudinal signal</span>
+            <span class="live-dot">irregular sampling</span>
+          </div>
+          <svg viewBox="0 0 620 360" role="img" aria-labelledby="signal-title signal-desc">
+            <title id="signal-title">Longitudinal biomedical signal</title>
+            <desc id="signal-desc">An abstract physiological waveform with observations at irregular time intervals and an uncertainty band.</desc>
+            <defs>
+              <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="var(--accent)" stop-opacity=".22" />
+                <stop offset="1" stop-color="var(--accent)" stop-opacity="0" />
+              </linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <g class="grid-lines">
+              <path d="M40 70H580M40 140H580M40 210H580M40 280H580" />
+              <path d="M90 40V310M200 40V310M310 40V310M420 40V310M530 40V310" />
+            </g>
+            <path class="uncertainty" d="M40 229 C85 202 98 241 140 190 S205 86 240 139 292 240 335 182 392 77 430 130 490 244 580 160 L580 215 C505 281 472 180 430 184 382 190 377 265 335 237 278 199 273 155 240 193 191 250 170 253 140 235 91 205 72 273 40 258Z" />
+            <path class="signal-line" d="M40 244 C85 216 98 255 140 207 S205 101 240 158 292 256 335 201 392 94 430 150 490 260 580 179" />
+            <g class="observations">
+              <circle cx="40" cy="244" r="6"/><circle cx="118" cy="228" r="6"/>
+              <circle cx="192" cy="118" r="6"/><circle cx="240" cy="158" r="6"/>
+              <circle cx="347" cy="180" r="6"/><circle cx="430" cy="150" r="6"/>
+              <circle cx="487" cy="255" r="6"/><circle cx="580" cy="179" r="6"/>
+            </g>
+          </svg>
+          <div class="panel-foot">
+            <span>patient history</span><span>uncertainty</span><span>dynamic risk</span>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+          <span>Scroll to explore</span><span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="marquee" aria-label="Research themes">
+        <div class="marquee-track">
+          <span>Longitudinal Data</span><i>✦</i><span>Wearable Sensing</span><i>✦</i>
+          <span>Probabilistic Prediction</span><i>✦</i><span>Calibration</span><i>✦</i>
+          <span>Biomedical AI</span><i>✦</i><span>Longitudinal Data</span><i>✦</i>
+          <span>Wearable Sensing</span><i>✦</i><span>Probabilistic Prediction</span><i>✦</i>
+          <span>Calibration</span><i>✦</i><span>Biomedical AI</span><i>✦</i>
+        </div>
+      </section>
+
+      <section class="about section-shell section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-kicker reveal">01 / About</div>
+        <div class="about-grid">
+          <h2 class="section-title reveal" id="about-title">From statistical foundations to real-world health AI.</h2>
+          <div class="prose reveal">
+            <p>
+              My research interest grew from a recurring problem: health data rarely arrive in the
+              clean, independent, and evenly sampled form assumed by standard models. Patients have
+              different histories, measurements are missing or noisy, devices vary, and predictions
+              must respect what was actually known at a given time.
+            </p>
+            <p>
+              I want to develop statistical machine learning methods that turn these complications
+              into explicit modeling and validation questions—producing predictions that are not
+              only accurate, but also calibrated, interpretable, and useful under uncertainty.
+            </p>
+          </div>
+        </div>
+
+        <div class="pathway reveal" aria-label="Academic pathway">
+          <article>
+            <span class="path-year">2026–present</span>
+            <h3>MSc, Artificial Intelligence for Science</h3>
+            <p>The Chinese University of Hong Kong</p>
+            <small>Expected completion: early 2028</small>
+          </article>
+          <div class="path-arrow" aria-hidden="true">→</div>
+          <article>
+            <span class="path-year">Completed 2026</span>
+            <h3>BSc, Statistics</h3>
+            <p>The Chinese University of Hong Kong</p>
+            <small>Studies completed at CUHK-Shenzhen</small>
+          </article>
+          <div class="path-arrow" aria-hidden="true">→</div>
+          <article class="path-future">
+            <span class="path-year">Next</span>
+            <h3>PhD research</h3>
+            <p>Reliable learning from longitudinal and multimodal health data</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="research section-pad" id="research" aria-labelledby="research-title">
+        <div class="section-shell">
+          <div class="section-kicker reveal">02 / Research direction</div>
+          <div class="section-heading-row reveal">
+            <h2 class="section-title" id="research-title">Questions I want to pursue</h2>
+            <p>Methods should reflect how biomedical data are collected—and how clinical decisions are actually made.</p>
+          </div>
+
+          <div class="research-grid">
+            <article class="research-card reveal">
+              <span class="card-index">01</span>
+              <div class="mini-graphic irregular" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+              <h3>Irregular longitudinal modeling</h3>
+              <p>How can models use histories of unequal length and irregular timing for honest, dynamic prediction?</p>
+              <ul><li>Repeated measurements</li><li>Time-aware representations</li><li>Information-safe evaluation</li></ul>
+            </article>
+            <article class="research-card reveal">
+              <span class="card-index">02</span>
+              <div class="mini-graphic probability" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <h3>Uncertainty & calibration</h3>
+              <p>Can predicted risks and intervals remain trustworthy across patient groups, time horizons, and data quality?</p>
+              <ul><li>Probabilistic prediction</li><li>Bayesian reasoning</li><li>Calibration under shift</li></ul>
+            </article>
+            <article class="research-card reveal">
+              <span class="card-index">03</span>
+              <div class="mini-graphic sensors" aria-hidden="true"><i></i><i></i><i></i></div>
+              <h3>Wearable & multimodal data</h3>
+              <p>How should signal quality, missingness, and device heterogeneity shape learning from physiological sensors?</p>
+              <ul><li>Signal representation</li><li>Multimodal fusion</li><li>Measurement reliability</li></ul>
+            </article>
+            <article class="research-card reveal">
+              <span class="card-index">04</span>
+              <div class="mini-graphic groups" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              <h3>Robust evaluation</h3>
+              <p>What evidence is needed when events are rare, cohorts are heterogeneous, and sample sizes are limited?</p>
+              <ul><li>Patient-level splitting</li><li>Subgroup analysis</li><li>Failure-case analysis</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section-shell section-pad" id="experience" aria-labelledby="experience-title">
+        <div class="section-kicker reveal">03 / Experience</div>
+        <div class="experience-intro reveal">
+          <h2 class="section-title" id="experience-title">Research practice across the full data lifecycle.</h2>
+          <div>
+            <p class="role"><strong>Algorithm Intern</strong> · E3A Healthcare</p>
+            <p class="role-meta">July 2025–present · Maternal, fetal, and neonatal health</p>
+          </div>
+        </div>
+
+        <div class="project-list">
+          <article class="project-row reveal">
+            <div class="project-number">A</div>
+            <div class="project-main">
+              <p class="project-type">Longitudinal prediction</p>
+              <h3>Delivery-Time Forecasting from Maternal and Fetal Monitoring Data</h3>
+              <p>
+                Developed and evaluated models that combine physiological signals, gestational age,
+                clinical variables, and patient history. The work sharpened my focus on irregular
+                sampling, heterogeneous populations, prediction intervals, and short-horizon risk.
+              </p>
+            </div>
+            <ul class="project-tags"><li>PyTorch</li><li>Temporal models</li><li>Calibration</li></ul>
+          </article>
+
+          <article class="project-row reveal">
+            <div class="project-number">B</div>
+            <div class="project-main">
+              <p class="project-type">Measurement science</p>
+              <h3>Neonatal Bilirubin Device Validation and Calibration Analysis</h3>
+              <p>
+                Analyzed paired measurements across multiple devices and production batches using
+                agreement-oriented methods, including Bland–Altman analysis. Reviewed calibration
+                designs for independence, reference-device dependence, identifiability, and stability.
+              </p>
+            </div>
+            <ul class="project-tags"><li>Agreement</li><li>Calibration</li><li>Study design</li></ul>
+          </article>
+
+          <article class="project-row reveal">
+            <div class="project-number">C</div>
+            <div class="project-main">
+              <p class="project-type">Physiological signals</p>
+              <h3>Fetal Heart Rate Signal Processing and Algorithm Evaluation</h3>
+              <p>
+                Audited and improved parts of a fetal phonocardiography pipeline, with emphasis on
+                sampling-rate consistency, missing outputs, time alignment, signal-quality gating,
+                state control, and evaluation against available references.
+              </p>
+            </div>
+            <ul class="project-tags"><li>FPCG</li><li>Time alignment</li><li>Signal quality</li></ul>
+          </article>
+
+          <article class="project-row reveal">
+            <div class="project-number">D</div>
+            <div class="project-main">
+              <p class="project-type">Research infrastructure</p>
+              <h3>Biomedical Data Auditing and Reproducible Pipelines</h3>
+              <p>
+                Built workflows for database querying, signal pairing, resumable download,
+                integrity checks, automated quality screening, and human review—connecting data
+                provenance to defensible model conclusions.
+              </p>
+            </div>
+            <ul class="project-tags"><li>SQL</li><li>Data QA</li><li>Reproducibility</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="principles section-pad" aria-labelledby="principles-title">
+        <div class="section-shell principles-grid">
+          <div class="reveal">
+            <div class="section-kicker">04 / How I work</div>
+            <h2 class="section-title" id="principles-title">Reliability is part of the method.</h2>
+          </div>
+          <ol class="principle-list reveal">
+            <li><span>01</span><div><strong>Split at the patient level.</strong><p>Repeated records from one person should never leak across evaluation sets.</p></div></li>
+            <li><span>02</span><div><strong>Respect the prediction time.</strong><p>Models should only use information genuinely available at the moment of prediction.</p></div></li>
+            <li><span>03</span><div><strong>Report more than one score.</strong><p>Calibration, subgroup behavior, interval coverage, and failure cases matter alongside accuracy.</p></div></li>
+            <li><span>04</span><div><strong>State the evidence boundary.</strong><p>Retrospective performance, simulations, and prospective clinical validation are distinct claims.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="projects section-shell section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-kicker reveal">05 / Open source</div>
+        <div class="open-source-card reveal">
+          <div class="repo-topline">
+            <span class="repo-icon" aria-hidden="true">⌘</span>
+            <span>PUBLIC REPOSITORY</span>
+          </div>
+          <div class="repo-body">
+            <div>
+              <h2 id="projects-title">DeviceAgreement</h2>
+              <p>
+                A reproducible toolkit for medical device agreement analysis—from validation and
+                exclusion audits to participant-cluster bootstrap, Bland–Altman visualization, and
+                exportable reports.
+              </p>
+            </div>
+            <a class="repo-link" href="https://github.com/yuntaoxue2026/Device-Agreement" target="_blank" rel="noreferrer">
+              View on GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="repo-meta">
+            <span><i class="lang-dot"></i> Python</span><span>Statistical validation</span><span>Reproducible reporting</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="section-shell contact-grid">
+          <div class="reveal">
+            <div class="section-kicker">06 / Contact</div>
+            <h2 class="section-title" id="contact-title">Let’s talk about reliable health data science.</h2>
+          </div>
+          <div class="contact-copy reveal">
+            <p>
+              I’m interested in research conversations and future PhD opportunities in statistical
+              machine learning, longitudinal modeling, wearable sensing, and biomedical data science.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:1155278036@link.cuhk.edu.hk"><span>Email</span><strong>1155278036@link.cuhk.edu.hk</strong><i aria-hidden="true">↗</i></a>
+              <a href="https://github.com/yuntaoxue2026" target="_blank" rel="noreferrer"><span>GitHub</span><strong>@yuntaoxue2026</strong><i aria-hidden="true">↗</i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell">
+        <p>Yuntao Xue <span>—</span> Statistical machine learning for health</p>
+        <p>© <span id="year">2026</span> · Built with care and plain HTML</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
